@@ -53,7 +53,6 @@ namespace OOProg01
             Address = address;
             Mobile = mobile;
             Email = email;
-
         }
 
         //methods

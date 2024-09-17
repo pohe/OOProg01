@@ -51,5 +51,12 @@ namespace OOProg01
             _height = height;
             _weight = weight;
         }
+
+        //methods  - access specifier returntype MethodName (parameters)
+        public void PrintAllInformation()
+        {
+            Console.WriteLine($"Human objektet indeholder {_name} {_height} {_weight} BMI {BMI}");
+        }
+
     }
 }

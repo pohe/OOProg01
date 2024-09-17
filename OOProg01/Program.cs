@@ -3,6 +3,13 @@ using OOProg01;
 
 Console.WriteLine("Hello,OO World!");
 
+Customer customer1 = new Customer("Peter", "Gade 123", "12121212");
+customer1.Blacklist();
+Customer customer2 = new Customer("Anne", "Street 123", "13131313");
+customer2 = customer1;
+customer2.CustomerInfo();
+customer1.Name = "Jens";
+customer2.CustomerInfo();
 
 Human h1 = new Human();
 
@@ -10,6 +17,7 @@ h1.Name = "Peter";
 h1.Height = 180;
 h1.Weight = 80;
 
+h1.PrintAllInformation();
 Console.WriteLine(h1.Name);
 string theName = h1.Name;
 Console.WriteLine($" Personen {theName} har et BMI på {h1.BMI} ");
