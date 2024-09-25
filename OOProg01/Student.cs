@@ -14,13 +14,22 @@ namespace OOProg01
         private string _dob;
         private int _courseNo;
 
+        private int _id;
+
+        private static int _counter = 0;
         //properties
+
+        public int Id 
+        { 
+            get { return _id; } 
+        }
         public int Sno
         {
             get { return _sno; }
             set { _sno = value; }
         }
 
+        
         public string Name
         {
             get { return _name; }
@@ -46,6 +55,8 @@ namespace OOProg01
         //constructors
         public Student(string name, int sno, int courseNo, string dob, string address, string mobile, string email)
         {
+            _counter = _counter + 1;
+            _id=_counter;
             _name = name;
             _sno = sno;
             _courseNo = courseNo;
@@ -58,6 +69,7 @@ namespace OOProg01
         //methods
         public void PrintInfo()
         {
+            Console.WriteLine($"Id {_id}");
             Console.WriteLine($"Name: {_name}");
             Console.WriteLine("Sno: {0}", _sno);
             Console.WriteLine("CourseNo: {0}", _courseNo);

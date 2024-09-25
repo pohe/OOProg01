@@ -58,5 +58,7 @@ namespace OOProg01
             Console.WriteLine($"Human objektet indeholder {_name} {_height} {_weight} BMI {BMI}");
         }
 
+        
+
     }
 }

@@ -37,3 +37,14 @@ student.PrintInfo();
 Student student2 = new Student("Jane", 2, 2, "02/02/2000", "456 Main St", "123-456-7890", "test2@zealand.dk");
 
 student2.PrintInfo();
+
+Student student3 = new Student("Peter", 2, 2, "02/02/2000", "456 Main St", "123-456-7890", "test2@zealand.dk");
+
+student3.PrintInfo();
+//MyMath calculator = new MyMath();
+//int result = calculator.Add(12, 30);
+//Console.WriteLine($"Resultatet er {result}");
+
+
+int result = MyMath.Subtract(12, 30);
+Console.WriteLine($"Resultatet er {result}");
